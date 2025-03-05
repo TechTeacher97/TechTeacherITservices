@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - TechTeacher IT Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Client Testimonials</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div id="testimonial-list">
+            <p>Loading testimonials...</p>
+        </div>
+        <h3>Submit Your Testimonial</h3>
+        <form id="testimonial-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="testimonial" placeholder="Your Testimonial" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <script>
+        document.getElementById("testimonial-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var name = document.getElementById("name").value;
+            var testimonial = document.getElementById("testimonial").value;
+            if (name && testimonial) {
+                var newTestimonial = document.createElement("div");
+                newTestimonial.innerHTML = `<strong>${name}</strong><p>${testimonial}</p><hr>`;
+                document.getElementById("testimonial-list").prepend(newTestimonial);
+                document.getElementById("name").value = "";
+                document.getElementById("testimonial").value = "";
+                alert("Thank you for your testimonial!");
+            }
+        });
+    </script>
+    <footer>
+        &copy; 2025 TechTeacher IT Services
+    </footer>
+</body>
+</html>
+

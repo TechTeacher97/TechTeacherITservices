@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTeacher IT Services</title>
+    <meta name="description" content="TechTeacher IT Services offers reliable and expert IT support for businesses, individuals, and schools.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2a1e1e;
+            color: white;
+        }
+        header {
+            background: #ff7300;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav {
+            background: #cc5a00;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 60px;
+            width: 100%;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            padding: 10px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #a34700;
+            border-radius: 5px;
+        }
+        .hero {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            margin-top: 100px;
+        }
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .cta-button:hover {
+            background: #cc5200;
+        }
+        .query-form {
+            text-align: center;
+            padding: 20px;
+        }
+        .query-form input, .query-form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .query-form button {
+            padding: 10px 20px;
+            background: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background: #ff7300;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>TechTeacher IT Services</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="hero">
+        <div>
+            <h1>Modern IT Solutions</h1>
+            <p>Fast, reliable, and expert IT support for home users, schools, and businesses.</p>
+            <a href="services.html" class="cta-button">Explore Services</a>
+        </div>
+    </div>
+    <div class="query-form">
+        <h2>Have a question or query?</h2>
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit" onclick="return validateForm()">Submit</button>
+    </div>
+    <footer>
+        &copy; 2025 TechTeacher IT Services
+    </footer>
+</body>
+</html>
+
