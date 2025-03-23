@@ -3,32 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - TechTeacher IT Services</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact - TechTeacher IT Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background-color: #ff7300;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-form {
+            background-color: white;
+            padding: 20px;
+            margin: 30px auto;
+            width: 90%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .contact-form h2 {
+            margin-bottom: 15px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #e65c00;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff7300;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <section class="contact-form">
-        <h2>Get in Touch</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
+
+<header>
+    <h1>Contact TechTeacher IT Services</h1>
+</header>
+
+<div class="container">
+    <div class="contact-form">
+        <h2>Get in touch</h2>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+            
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Phone:</label>
+            <input type="tel" name="phone">
+
+            <label>Your Message:</label>
+            <textarea name="message" rows="5" required></textarea>
+
             <button type="submit">Send Message</button>
         </form>
-    </section>
+    </div>
     <footer>
         &copy; 2025 TechTeacher IT Services
     </footer>
 </body>
 </html>
+
 
